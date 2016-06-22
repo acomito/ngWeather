@@ -1,0 +1,40 @@
+<div ng-show="weatherValues.displayWeather" flex-sm="100" flex-gt-sm="70" flex-gt-md="70" flex-gt-lg="70">
+<!--   <div class="row md-whiteframe-z2 card">
+    <skycon icon="weatherData.icon"></skycon>
+      <h3 class="center-text">
+        {{weatherData.location}}
+      </h3>
+      <h3 class="center-text">
+        Right now it's {{ weatherData.nowSummary }} and {{ weatherData.temperature | number:0}}&deg;
+      </h3>
+      <h3 class="center-text">
+        {{ weatherData.minutelySummary }}
+      </h3>
+      <md-button ng-click="newSearch()" class="md-primary md-raised">New Search</md-button>
+  </div> -->
+
+
+
+        <md-card  
+        md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch>
+        <md-card-title>
+            <md-card-title-media>
+            <div class="md-media-lg card-media">
+                  <skycon icon="weatherData.icon" ></skycon>
+                  <span class="md-subhead"> {{weatherData.location}}</span>
+            </div>
+          </md-card-title-media>
+          <md-card-title-text>
+            
+            <span class="md-headline"> Right now it's {{ weatherData.nowSummary }} and {{ weatherData.temperature | number:0}}&deg;</span>
+            <span class="md-subhead"> {{ weatherData.minutelySummary }}</span>
+          </md-card-title-text>
+
+          
+        </md-card-title>
+        <md-card-actions layout="row" layout-align="end center">
+          <md-button ng-click="newSearch()" class="md-primary md-raised">New Search</md-button>
+        </md-card-actions>
+      </md-card>
+
+</div>

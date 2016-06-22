@@ -1,0 +1,98 @@
+
+html, body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+
+.active {
+	background-color: lightgrey;
+}
+
+
+
+.menu {
+	padding: 5px;
+	padding-bottom: 0;
+}
+
+
+div.ng-scope {
+	width: 100%;
+}
+
+
+
+md-toolbar h3 {
+	margin: auto;
+	font-weight: 500;
+}
+
+md-list-item > button {
+	width: 100%;
+	text-align: center !important;
+}
+
+#content {
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 5px;
+}
+
+/*
+*/
+
+.m-b-20 {
+	margin-bottom: 20px;
+}
+
+.m-b-30 {
+	margin-bottom: 30px;
+}
+
+.m-b-40 {
+	margin-bottom: 40px;
+}
+
+.splash {
+	display: none;
+}
+
+[ng-cloak].splash {
+	display: block !important;
+}
+		
+.splash {
+  position: absolute;
+	top: 0;
+	left: 0;
+	height:100%;
+	width:100%;	
+	filter: alpha(opacity=70);
+	opacity: 0.7;
+	background: #000;
+}
+
+.splash h2 {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 200;
+	font-size: 4em;
+	color:white;
+	margin-top: 20%;			
+
+}
+
+h1.md-title {
+	text-align: center;
+}
+
+h1.md-title,
+.partial-title {
+	color: rgb(63,81,181);
+}
+
+

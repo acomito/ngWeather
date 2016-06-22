@@ -1,0 +1,29 @@
+<div ng-if="weatherValues.showForm">
+  <div flex-sm="100" flex-gt-sm="70" flex-gt-md="70" flex-gt-lg="70"
+      class="row md-whiteframe-z2"
+      ng-if="!weatherValues.loadingSpinner">
+
+      <md-content class="md-padding md-margin">
+     <form novalidate role="form" name="form">
+     <h1 class="md-title m-b-40">Submit your Zip Code</h1>
+          <md-input-container class="md-block">
+            <label>Enter Your Zip Code...</label>
+            <input
+            ng-model="form.zip"
+            class="form-control"
+            name="zipcode"
+            type="text"
+            id="zipcode"
+            required
+            >
+          </md-input-container>
+          <md-button ng-click="setZipcode(form)" type="submit" class="md-primary md-raised">Submit</md-button>
+        </form>
+        </md-content>
+  </div>
+</div>
+
+
+
+
+

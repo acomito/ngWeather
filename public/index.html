@@ -1,0 +1,81 @@
+<!doctype html>
+<html >
+    <head>
+    <base href="/" />
+         <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory  -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css">
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+        <link rel="stylesheet"  href="scripts/angular-material/angular-material.css">
+    <link rel="stylesheet"  href="./styles/style.css">
+<!--         <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.0.9/angular-material.css"> -->
+
+    </head>
+
+<div class="splash" ng-cloak="">
+  <h2>Loading...</h2>
+</div>  
+
+  <body ng-app="weatherApp" layout="column" ng-controller="layoutController">
+        <md-toolbar layout="row" >
+        <md-button class="menu" ng-click="toggleMenu()" hide-gt-sm>
+            <img class="menu" src="./images/menu.svg"></i>
+        </md-button>
+
+            <h3>ngWeather App</h3>
+        </md-toolbar>
+    
+        <div class="container" layout="row" flex>
+            <md-sidenav  md-is-locked-open="$mdMedia('gt-sm')" class="md-whiteframe-4dp" md-component-id="SideNav">
+                <md-list ng-click="toggleMenu()" >
+                    <md-list-item ui-sref-active="active">
+                      <md-button ui-sref="home">Search Weather</md-button>
+                    </md-list-item>
+                    <md-list-item ui-sref-active="active"> 
+                      <md-button  ui-sref="about" >About This Page</md-button>
+                    </md-list-item>
+                    <md-list-item ui-sref-active="active"> 
+                      <md-button  ui-sref="forecastio" >Forecast.io</md-button>
+                    </md-list-item>
+                </md-list>
+            </md-sidenav>
+          <div ui-view ></div>
+        </div>
+
+
+    
+    <!-- <areacode-input></areacode-input> -->
+
+
+        <!-- SCRIPTS -->
+        <script src="scripts/angular/angular.js"></script>
+        <script src="scripts/angular-animate/angular-animate.js"></script>
+        <script src="scripts/angular-aria/angular-aria.min.js"></script>
+        <script src="scripts/angular-material/angular-material.js"></script>
+        <script src="scripts/angular-ui-router/release/angular-ui-router.min.js"></script>
+        <script src="bower/skycons/skycons.js"></script>
+        <script src="bower/angular-skycons/angular-skycons.js"></script>
+        <script src="../app.js"></script>
+        <script src="../router.js"></script>
+        <script src="../js/directives/directives.js"></script>
+        <script src="../js/factory.js"></script>
+        <script src="../js/controllers.js"></script>
+        <script src="../js/layoutController.js"></script>
+
+        <script>
+  
+
+
+</script>
+  </body>
+</html>
+
+
+
